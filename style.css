@@ -1,0 +1,6 @@
+.side-by-side{
+    width: 50%;
+    float: left;
+    color: red; /*for testing only*/
+    background-color: yellow; /*for testing only*/
+}
