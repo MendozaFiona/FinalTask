@@ -1,6 +1,35 @@
-.side-by-side{
-    width: 50%;
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    } /*for testing only*/
+
+    #wrap {
+        display: flex;
+        clear: left;
+        width: 100%;
+    }
+    
+    #stick-btm {
+        /*margin-top: 0.25rem;
+        margin-right: 10%;*/
+        clear: left;
+        position: fixed;
+        margin-top: 92%;
+        bottom: 0;
+        width: 100%;
+        height: 8%;
+        background-color: yellowgreen; /*for testing only*/
+    }
+}
+
+.vertical-center {
+    display: flex;
+    align-items: center;
+}
+
+.side-by-side {
     float: left;
+    width: 50%;
     color: red; /*for testing only*/
     background-color: yellow; /*for testing only*/
 }
