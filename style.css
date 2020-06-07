@@ -1,25 +1,60 @@
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    } /*for testing only*/
+@media only screen and (max-width: 800px) {
+
+    #extra {
+        display: none;
+    }
 
     #wrap {
-        display: flex;
         clear: left;
         width: 100%;
+        overflow: scroll;
+        z-index: 0;
     }
     
     #stick-btm {
-        /*margin-top: 0.25rem;
-        margin-right: 10%;*/
-        clear: left;
         position: fixed;
-        margin-top: 92%;
+        margin-top: 80%;
         bottom: 0;
         width: 100%;
-        height: 8%;
-        background-color: yellowgreen; /*for testing only*/
+        height: 60px;
+        border-top: white;
+        border-style: solid;
+        border-top-width: thin;
     }
+
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.col {
+    float: left;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container-fluid {
+    height: 100%;
+    background-color: black; /*TEST*/
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 1% 0;
+    position: relative;
 }
 
 .vertical-center {
@@ -29,7 +64,15 @@
 
 .side-by-side {
     float: left;
-    width: 50%;
+    height: 100%;
     color: red; /*for testing only*/
-    background-color: yellow; /*for testing only*/
+    background-color: black;
+}
+
+.left {
+    width: 60%;
+}
+
+.right {
+    width: 40%;
 }
