@@ -1,5 +1,25 @@
 @media only screen and (max-width: 800px) {
 
+    footer {
+        display: none;
+    }
+
+    .col-sm-1{
+        width: 85%;
+    }
+
+    .col-sm-4 {
+        width: 60%;
+    }
+    
+    .col-sm-8 {
+        width: 80%;
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+
     #extra {
         display: none;
     }
@@ -27,6 +47,7 @@
 html, body {
     height: 100%;
     margin: 0;
+    padding: 0;
 }
 
 header {
@@ -36,25 +57,100 @@ header {
     z-index: 10;
 }
 
+footer {
+    height: 60px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    bottom: 0;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: black;
+    border-color: white;
+    border-radius: 8px;
+}
+
+.chat-icons {
+    cursor: pointer;
+}
+
+.close {
+    color: white;
+}
+
 .col {
     float: left;
 }
 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
 
 .container-fluid {
     height: 100%;
     background-color: black; /*TEST*/
 }
 
-.imgcontainer {
+.cust-label {
+    float:left;
+}
+
+.icons {
+    padding-top: 0;
+    background-image: url("images/drrr_jp.png");
+}
+
+.img-container {
     text-align: center;
     margin: 1% 0;
     position: relative;
+}
+
+.input-group-text {
+    background-color: black;
+    border: none;
+}
+
+.fa {
+    color: white;
+}
+
+.form-control {
+    border-color: white;
+    border-radius: 12px;
+}
+
+.left {
+    width: 60%;
+}
+
+.modal-content {
+    border-color: white;
+    background-color: black;
+    margin: 0 auto;
+    color: white;
+}
+
+.right {
+    width: 40%;
+}
+
+.right-most {
+    padding-right: 0;
+    margin-right: 2px;
+}
+
+.side-by-side {
+    float: left;
+    height: 100%;
+    color: white; /*for testing only*/
+    background-color: black;
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
 
 .vertical-center {
@@ -62,17 +158,6 @@ header {
     align-items: center;
 }
 
-.side-by-side {
-    float: left;
-    height: 100%;
-    color: red; /*for testing only*/
-    background-color: black;
-}
-
-.left {
-    width: 60%;
-}
-
-.right {
-    width: 40%;
+#logo {
+    padding-bottom: 6px;
 }

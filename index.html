@@ -19,36 +19,50 @@
 <body>
 
   <header class="border-bottom">
-    <div id="stick-btm" class="container-fluid vertical-center text-right">
-      <div class="container">
+    <div id="stick-btm" class="container-fluid vertical-center">
+
+      <div class="img-container text-left">
+        <img class="img-fluid py-0" src="images/drrr_en.png" alt="site-logo">
+      </div>
+
+      <div class="container text-right right-most">
         <button type="submit" name="commit" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#login">
-          Login
+          ENTER
         </button>
       </div>
+
     </div>
   </header>
 
   <div class="container-fluid p-0">
 
     <div id="wrap" class="container-fluid vertical-center side-by-side left text-center">
-      <div class="container py-5 border rounded text">
+      <div class="container icons py-4 border rounded text">
+
+        <div class="row no-gutters justify-content-center align-items-center">
+
+          <div class="img-container">
+            <img class="img-fluid py-0" src="images/icon.png" alt="icon-chooser">
+          </div>
+
+        </div>
 
         <div class="row no-gutters justify-content-center align-items-center">
 
           <div class="col col-sm-3 py-2 px-3 text-center">
-            <div class="imgcontainer">
+            <div class="img-container chat-icons" data-toggle="modal" data-target="#login">
               <img class="img-fluid border rounded py-0" src="images/one.png" alt="chat-icon">
             </div>
           </div>
 
           <div class="col col-sm-3 py-2 px-3 text-center">
-            <div class="imgcontainer">
+            <div class="img-container chat-icons" data-toggle="modal" data-target="#login">
               <img class="img-fluid border rounded py-0" src="images/two.png" alt="chat-icon">
             </div>
           </div>
 
           <div class="col col-sm-3 py-2 px-3 text-center">
-            <div class="imgcontainer">
+            <div class="img-container chat-icons" data-toggle="modal" data-target="#login">
               <img class="img-fluid border rounded py-0" src="images/three.png" alt="chat-icon">
             </div>
           </div>
@@ -58,19 +72,19 @@
         <div class="row no-gutters justify-content-center align-items-center">
 
           <div class="col col-sm-3 py-2 px-3 text-center">
-            <div class="imgcontainer">
+            <div class="img-container chat-icons" data-toggle="modal" data-target="#login">
               <img class="img-fluid border rounded py-0" src="images/four.png" alt="chat-icon">
             </div>
           </div>
 
           <div class="col col-sm-3 py-2 px-3 text-center">
-            <div class="imgcontainer">
+            <div class="img-container chat-icons" data-toggle="modal" data-target="#login">
               <img class="img-fluid border rounded py-0" src="images/five.png" alt="chat-icon">
             </div>
           </div>
 
           <div class="col col-sm-3 py-2 px-3 text-center">
-            <div class="imgcontainer">
+            <div class="img-container chat-icons" data-toggle="modal" data-target="#login">
               <img class="img-fluid border rounded py-0" src="images/six.png" alt="chat-icon">
             </div>
           </div>
@@ -81,49 +95,73 @@
     </div>
 
     <div id="extra" class="container-fluid vertical-center side-by-side right text-center">
-      <div class="container px-3 py-4 border rounded">
+      <div class="container py-4 border rounded">
 
-        <div class="imgcontainer">
-          <img class="img-fluid rounded py-1" src="images/dollars.png" alt="dollars">
+        <div class="row justify-content-center">
+
+          <div id="logo" class="img-container">
+            <img class="img-fluid rounded py-1" src="images/dollars.png" alt="dollars">
+          </div>
+
         </div>
 
-        <span id="adminsuccess" class="py-2"></span>
+        <div class="form-group mb-3">
+          <span id="adminsuccess"></span>
+        </div>
 
+        <div class="form-group mb-3">
 
-        <div class="input-group mb-3">
+          <div class="row justify-content-center">
 
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-sm">
+            <label for="uname" class="cust-label col-sm-1">
               <i class="fa fa-user"></i>
-            </span>
-          </div>
+            </label>
+
+            <input type="text" id="uname" class="form-control form-control-sm h-50 col-sm-8" aria-label="Username" aria-describedby="basic-addon1">
           
-          <input type="text" id="uname" class="form-control form-control-sm" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-        
+          </div>
+
         </div>
 
-        <div class="input-group mb-3">
+        <div class="form-group mb-3">
 
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-sm">
-              <i class="fa fa-lock"></i>
-            </span>
-          </div>
+          <div class="row justify-content-center">
+
+            <label for="pass" class="cust-label col-sm-1">
+                <i class="fa fa-lock"></i>
+            </label>
+            
+            <input type="password" id="pass" class="form-control form-control-sm h-50 col-sm-8" aria-label="Password" aria-describedby="basic-addon1">
           
-          <input type="password" id="pass" class="form-control form-control-sm" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
-        
+        </div>
         </div>
 
-        <span id="usersuccess"></span>
+        <div class="form-group mb-3">
+          <span id="usersuccess"></span>
+        </div>
 
-        <button type="submit" name="commit" class="btn btn-secondary btn-sm btn-block" onclick="confirm();">
-          <span>Login <i class="fa fa-sign-in"></i></span>
-        </button>
+        <div class="row justify-content-center">
+
+          <button type="submit" name="commit" class="btn btn-secondary btn-sm btn-block h-50 px-3 col-sm-4" onclick="confirm();">
+            <span>ENTER <i class="fa fa-sign-in"></i></span>
+          </button>
+
+        </div>
 
       </div>
     </div>
 
   </div>
+
+  <footer class="border-top">
+
+    <div class="container-fluid vertical-center text-center">
+      <div class="container">
+        <p>© ASCII Media Works & Brain's Base</p>
+      </div> 
+    </div>
+
+  </footer>
 
   <div class="modal fade" id="login" role="dialog">
 
@@ -132,43 +170,63 @@
       <div class="modal-content">
 
         <div class="modal-header">
-          <h4 class="modal-title">Login</h4>
+
+          <div class="container-fluid justify-content-center">
+
+            <div class="img-container text-center">
+              <img class="img-fluid" src="images/dollars_hdr.png" alt="dollars">
+            </div>
+
+          </div>
+          
           <button type="button" class="close" data-dismiss="modal">&times;</button>
+          
         </div>
 
         <div class="modal-body">
 
-          <span id="adminsuccess"></span>
-
-          <div class="input-group mb-3">
-
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-sm">
-                <i class="fa fa-envelope"></i>
-              </span>
-            </div>
-
-            <input type="text" id="uname" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-          
+          <div class="form-group mb-3 text-center">
+            <span id="adminsuccess-2"></span>
           </div>
-
-          <div class="input-group mb-3">
-
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-sm">
-                <i class="fa fa-lock"></i>
-              </span>
-            </div>
+  
+          <div class="form-group mb-3">
+  
+            <div class="row justify-content-center">
+  
+              <label for="uname" class="cust-label col-sm-1">
+                <i class="fa fa-user"></i>
+              </label>
+  
+              <input type="text" id="uname-2" class="form-control form-control-sm h-50 col-sm-8" aria-label="Username" aria-describedby="basic-addon1">
             
-            <input type="password" id="pass" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
-          
+            </div>
+  
           </div>
-
-          <span id="usersuccess"></span>
-
-          <button type="submit" name="commit" class="btn btn-primary btn-lg btn-block" onclick="confirm();">
-            <span>Login <i class="fa fa-sign-in"></i></span>
-          </button>
+  
+          <div class="form-group mb-3">
+  
+            <div class="row justify-content-center">
+  
+              <label for="pass" class="cust-label col-sm-1">
+                  <i class="fa fa-lock"></i>
+              </label>
+              
+              <input type="password" id="pass-2" class="form-control form-control-sm h-50 col-sm-8" aria-label="Password" aria-describedby="basic-addon1">
+            
+          </div>
+          </div>
+  
+          <div class="form-group mb-3 text-center">
+            <span id="usersuccess-2"></span>
+          </div>
+  
+          <div class="row justify-content-center">
+  
+            <button type="submit" name="commit" class="btn btn-secondary btn-sm btn-block h-50 px-3 col-sm-4" onclick="confirm();">
+              <span>ENTER <i class="fa fa-sign-in"></i></span>
+            </button>
+  
+          </div>
           
         </div>
 
