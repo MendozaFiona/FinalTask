@@ -6,14 +6,14 @@ function confirm(){
     that's why the code became complicated ;-;*/
 
     //this is for the home login
-    var uname = document.getElementById("uname").value;
-    var pass = document.getElementById("pass").value;
+    let uname = document.getElementById("uname").value;
+    let pass = document.getElementById("pass").value;
 
     //this is for the modal login
-    var uname2 = document.getElementById("uname-2").value;
-    var pass2 = document.getElementById("pass-2").value;
+    let uname2 = document.getElementById("uname-2").value;
+    let pass2 = document.getElementById("pass-2").value;
 
-    var text = "It works";
+    let text = "It works";
 
     if(uname != ""){
 
